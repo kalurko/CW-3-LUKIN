@@ -30,7 +30,7 @@ class PostsDAO:
         return posts_data
 
     def load_comments(self):
-        with open(self.posts_path, 'r', encoding='utf-8') as file:
+        with open(self.comments_path, 'r', encoding='utf-8') as file:
             comments = json.load(file)
         return comments
 

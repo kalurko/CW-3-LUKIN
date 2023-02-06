@@ -1,4 +1,4 @@
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, request
 from pprint import pprint
 
 from dao.dao import PostsDAO
@@ -36,5 +36,3 @@ def user_page(username):
     return render_template('user-feed.html', posts=user_posts, username=username)
 
 
-# comments = posts.get_comments_by_post_id(1)
-# print(comments)
