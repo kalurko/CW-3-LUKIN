@@ -15,7 +15,7 @@ def not_found_error(error):
 
 @app.errorhandler(500)
 def not_found_error(error):
-    return 'СЛшибка на сервере'
+    return 'Ошибка на сервере'
 
 
 if __name__ == '__main__':

@@ -13,6 +13,6 @@ def get_all_posts():
 
 
 @api_blueprint.route('/api/posts/<int:postid>', methods=['GET'])
-def get_post_bt_id(postid):
-    return jsonify(posts.get_post_by_pk(postid))
+def get_post_by_id(postid):
+    return jsonify(posts.get_post_by_pk_json(postid))
 
